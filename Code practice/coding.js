@@ -27,6 +27,40 @@ const tasks = [
 
 
   ///////////////////////////////
+// หา index ที่ id = 3
+const tasks = [
+  { id: 1, name: 'Fishing' },
+  { id: 2, name: 'Shopping' },
+  { id: 3, name: 'Swimming' },
+  { id: 4, name: 'Football' }
+];
+
+function findIndex(arr,tay){
+let index = arr.findIndex(e => e.id == 3)
+tay(index)
+}
+
+function display(gg){
+console.log(gg + ' hello tay kung')
+}
+findIndex(tasks, display)
+
+
+  //////////////////////////////
+
+
+  function doSomething(callback) {
+    console.log("Doing something...");
+    callback();
+  }
+  
+  function callbackFunction() {
+    console.log("Callback function executed!");
+  }
+  
+  doSomething(callbackFunction)
+
+  ///////////////////////////////
 
   //Complete the square sum function so that it squares each number passed into it and then sums the results together.
   //For example, for [1, 2, 2] it should return 9 
